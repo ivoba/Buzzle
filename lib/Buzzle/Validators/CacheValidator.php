@@ -8,6 +8,7 @@ use Buzz\Message\Request;
 /**
  * This valids if a buzz response is cacheable or not.
  *
+ * @todo use Interfaces of Request and Response
  * @author Hugo Dozois-Caouette
  * @author Ivo Bathke <ivo.bathke at gmail.com>
  */
