@@ -5,7 +5,7 @@ Extension for [Buzz](https://github.com/kriswallsmith/Buzz)
 
 It currently extends the Buzz Browser and adds a caching layer with [DoctrineCache](https://github.com/doctrine/cache).
 
-[![Build Status](https://secure.travis-ci.org/ivoba/buzzle.png?branch=master)](http://travis-ci.org/ivoba/buzzle)
+[![Build Status](https://secure.travis-ci.org/ivoba/Buzzle.png?branch=master)](http://travis-ci.org/ivoba/Buzzle)
 [![Total Downloads](https://poser.pugx.org/ivoba/buzzle/downloads.png)](https://packagist.org/packages/ivoba/buzzle)
 
 ###Installation
