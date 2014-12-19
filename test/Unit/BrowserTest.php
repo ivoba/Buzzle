@@ -1,11 +1,7 @@
 <?php
-namespace Buzzle\Test;
+namespace Buzzle\Test\Unit;
 
-use Buzz\Client\Curl;
-use Buzz\Message\Factory\Factory;
 use Buzzle\Browser;
-
-require_once __DIR__ . '/../../../lib/Buzzle/Browser.php';
 
 class BrowserTest extends \PHPUnit_Framework_TestCase{
 

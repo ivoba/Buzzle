@@ -5,6 +5,7 @@ namespace Buzzle;
 use Buzz\Browser as BuzzBrowser;
 use Buzz\Client\ClientInterface;
 use Buzz\Message\Factory\FactoryInterface;
+use Buzz\Message\MessageInterface;
 use Buzz\Message\RequestInterface;
 use Buzz\Util\Url;
 
@@ -28,7 +29,7 @@ class Browser extends BuzzBrowser {
         $this->factory = $this->getMessageFactory();
     }
     
-    public function setCacher(Cacher $cacher) {
+    public function setCacher(CacherInterface $cacher) {
         $this->cacher = $cacher;
     }
         

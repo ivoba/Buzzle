@@ -1,9 +1,8 @@
 <?php
 
-namespace Buzzle\Test;
+namespace Buzzle\Test\Unit;
 
 use Buzzle\Validators\CacheValidator;
-use Buzzle\Validators\CacheValidatorInterface;
 
 class ValidatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,7 +22,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase
     public function testValidator($method, $content)
     {
 
-        $request = $this->getMock('Buzz\Message\Request'); //Interface
+        $request = $this->getMock('Buzz\Message\Request');
         $response = $this->getMock('Buzz\Message\Response');
 
         $request->expects($this->once())

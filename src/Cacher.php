@@ -19,7 +19,7 @@ class Cacher implements CacherInterface
 
     /**
      *
-     * @var CacheInterface
+     * @var Cache
      */
     private $cache;
 

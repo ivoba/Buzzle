@@ -31,7 +31,6 @@ class CacheValidator implements CacheValidatorInterface
         if ($this->isRequestCacheable($request) && $this->isResponseCacheable($response)) {
             return true;
         }
-
         //add more
         return false;
     }
@@ -44,8 +43,8 @@ class CacheValidator implements CacheValidatorInterface
     public function isExpired(Response $response, $minFresh = 5)
     {
         $expires = $response->getHeader('expires');
-        $parsedExpires = strtotime($expires);
         if ($expires !== null) {
+            $parsedExpires = strtotime($expires);
             if ($parsedExpires === false || (time() + $minFresh) > $parsedExpires) {
                 return true;
             }
@@ -68,7 +67,6 @@ class CacheValidator implements CacheValidatorInterface
         if ($request->getHeader("authorization")) {
             return false;
         }
-
         return true;
     }
 
@@ -151,7 +149,7 @@ class CacheValidator implements CacheValidatorInterface
 
     /**
      *
-     * @param type $cacheControl
+     * @param string $cacheControl
      * @return array
      */
     private function parseCacheControl($cacheControl)
